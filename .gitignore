@@ -1,0 +1,26 @@
+# secrets
+.env
+*.pem
+
+# data — the corpus lives outside git; blobs are content-addressed on disk
+/data/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# editors / os
+.DS_Store
+.idea/
+.vscode/

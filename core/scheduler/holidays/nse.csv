@@ -1,0 +1,12 @@
+# NSE trading holidays. Format: date (ISO), name.
+#
+# This file ships EMPTY on purpose. The holiday list is published by the exchange
+# each year and I am not going to guess at it -- a wrong date here either fabricates
+# a P0 or hides a real outage.
+#
+# Fill it from the exchange circular ("Holiday Master - Trading" on nseindia.com),
+# one row per closed trading day, then run `kosh gaps --source <slug>` to confirm the
+# expected-day count drops by the number of holidays you added.
+#
+# `kosh health` warns whenever the current year has no rows here.
+date,name

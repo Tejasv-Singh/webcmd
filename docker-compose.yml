@@ -1,0 +1,31 @@
+# Postgres for the observation store. SQLite is the default for dev and tests;
+# this is what you point KOSH_DATABASE_URL at once collection is real.
+#
+#   docker compose up -d
+#   KOSH_DATABASE_URL=postgresql://kosh:kosh@localhost:5433/kosh kosh migrate
+#
+# Port 5433 on purpose, so it never fights a local Postgres on 5432.
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: kosh-postgres
+    environment:
+      POSTGRES_USER: kosh
+      POSTGRES_PASSWORD: kosh
+      POSTGRES_DB: kosh
+      # C collation keeps ISIN/symbol ordering stable across machines.
+      POSTGRES_INITDB_ARGS: "--locale=C --encoding=UTF8"
+    ports:
+      - "5433:5432"
+    volumes:
+      - kosh-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kosh -d kosh"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+volumes:
+  kosh-pgdata:
+    # Named volume, never bind-mounted to a temp dir: the corpus is the asset.

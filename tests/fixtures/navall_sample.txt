@@ -1,0 +1,24 @@
+Scheme Code;ISIN Div Payout/ ISIN Growth;ISIN Div Reinvestment;Scheme Name;Plan;Option;Net Asset Value;Date
+ 
+Open Ended Schemes(Debt Scheme - Liquid Fund)
+ 
+Testfund Asset Management Limited
+ 
+100001;INF000TEST01;INF000TEST02;Testfund Liquid Fund;Direct Plan;Growth;1234.5678;21-Aug-2026
+100002;INF000TEST03;INF000TEST04;Testfund Liquid Fund;Regular Plan;Growth;1198.2211;21-Aug-2026
+100003;INF000TEST05;-;Testfund Overnight Fund;Direct Plan;Growth;N.A.;21-Aug-2026
+ 
+Open Ended Schemes(Equity Scheme - Large Cap Fund)
+ 
+Second Testfund AMC Ltd
+ 
+200001;INF000TEST06;INF000TEST07;Second Testfund Large Cap Fund;Direct Plan;Growth;98.4300;21-Aug-2026
+200002;INF000TEST08;INF000TEST09;Second Testfund Large Cap Fund;Regular Plan;IDCW-Payout;42.1050;21-Aug-2026
+200003;-;-;Second Testfund Unlisted Scheme;Direct Plan;Growth;55.0000;21-Aug-2026
+ 
+Close Ended Schemes(Debt Scheme - Fixed Maturity Plan)
+ 
+Third Testfund Mutual Fund
+ 
+300001;INF000TEST10;INF000TEST11;Third Testfund FMP Series 42;Direct Plan;Growth;10.9931;20-Aug-2026
+300002;INF000TEST12;-;Third Testfund FMP Series 43;Direct Plan;Growth;1,024.5000;21-Aug-2026

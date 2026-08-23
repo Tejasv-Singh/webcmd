@@ -1,0 +1,5 @@
+isin,name,nse_symbol,bse_code,entity_type
+INE000TEST01,Testco Industries Limited,TESTCO,900001,equity
+INE000TEST02,Second Test Corp Ltd.,SECTEST,900002,equity
+INE000TEST03,Renamed Holdings Limited,OLDNAME,900003,equity
+,Unlisted Alt Data Target Pvt Ltd,,,private
